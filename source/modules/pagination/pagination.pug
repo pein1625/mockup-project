@@ -1,0 +1,12 @@
+mixin pagination
+  nav.paging-wrap
+    ul.pagination.paging
+      li.page-item.paging__item
+        a.page-link.paging__link(href="#!")
+          i.fa.fa-angle-double-left.paging__icon
+      each item in [1, 2, 3]
+        li.page-item.paging__item
+          a.page-link.paging__link(href="#!")= item
+      li.page-item.paging__item
+        a.page-link.paging__link(href="#!")
+          i.fa.fa-angle-double-right.paging__icon
