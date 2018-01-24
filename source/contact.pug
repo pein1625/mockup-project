@@ -1,0 +1,40 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/contact-list/contact-list
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.contact)
+    main.contact
+      .container
+        section.contact__content
+          +contact-list
+        section.contact-form
+          h1.heading SAY HELLO
+          form.main-form
+            .row
+              .col-sm-6
+                .main-form__group
+                  input.main-form__input(type="text", placeholder="Full name")
+              .col-sm-6
+                .main-form__group
+                  input.main-form__input(type="text", placeholder="Full name")
+              .col-sm-6
+                .main-form__group
+                  input.main-form__input(type="text", placeholder="Full name")
+              .col-sm-6
+                .main-form__group
+                  input.main-form__input(type="text", placeholder="Full name")
+            .main-form__group
+              textarea.main-form__textarea(rows="3", placeholder="Message...")
+            .main-form__group
+              button.button.button--blue.main-form__btn(type="submit")
+                i.fa.fa-paper-plane.button__icon
+                | SUBMIT
+      article.contact-map
+        <iframe class="contact-map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.228166563333!2d103.84991264890863!3d1.2900474192656455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a747de0c15%3A0xe5639e25fabece80!2sNational+Gallery+Singapore!5e0!3m2!1sen!2s!4v1516865587668" frameborder="0" style="border:0" allowfullscreen></iframe>
+    +footer(data)
+    script(src="js/main.js")

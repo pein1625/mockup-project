@@ -1,0 +1,47 @@
+.contact-list {
+  display: flex;
+  flex-flow: row wrap;
+  &__item {
+    padding: 60px 0 54px;
+    width: 25%;
+    @include clearfix;
+    @include respond-to('tablet-and-down') {
+      width: 50%;
+    }
+    @include respond-to('smallphone-and-down') {
+      width: 100%;
+    }
+  }
+  &__imgwrap {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid $blue-lighter;
+  }
+  &__img {
+    height: 30px;
+    width: auto;
+  }
+  &__info {
+    margin-left: 96px;
+  }
+  &__heading {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    color: $blue-lighter;
+    line-height: 37px;
+    margin-bottom: -2px;
+  }
+  &__text {
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+    line-height: 23px;
+    margin-bottom: 0;
+  }
+}

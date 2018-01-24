@@ -30,6 +30,9 @@
       },{
         "title": "university page",
         "url": "university"
+      },{
+        "title": "contact page",
+        "url": "contact"
       }
     ]
   }
