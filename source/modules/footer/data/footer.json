@@ -1,0 +1,22 @@
+{
+  "data": {
+    "title": [
+      "FOOTER MENU",
+      "FOOTER MENU"
+    ],
+    "list1": [
+      "Lorem ipsum dolor sit item 1",
+      "Lorem ipsum dolor sit amet item 2",
+      "Lorem ipsum item 3",
+      "Lorem ipsum dolor sit 4",
+      "Lorem ipsum dolor sit item 5"
+    ],
+    "list2": [
+      "Lorem ipsum dolor sit item 1",
+      "Lorem ipsum dolor sit amet item 2",
+      "Lorem ipsum item 3",
+      "Lorem ipsum dolor sit 4",
+      "Lorem ipsum dolor sit item 5"
+    ]
+  }
+}
