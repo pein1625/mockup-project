@@ -10,3 +10,12 @@
 @import 'vendors/bootstrap-override-variable';
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'font-awesome';
+@import 'node_modules/owl.carousel/src/scss/owl.carousel';
+
+@import 'components/button';
+
+@import 'layout/body';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'page/button';

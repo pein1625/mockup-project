@@ -1,0 +1,41 @@
+mixin footer(data)
+  footer.footer
+    .container
+      .footer__inner
+        .row
+          .col-lg-6
+            article.footer__widget
+              .footer__logo
+                img.footer__logoimg(src="images/logo.png", alt="logo")
+              p.footer__intro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, quis, ad! Omnis explicabo vitae maxime.
+              ul.social
+                li.social__item
+                  a.social__link(href="#!")
+                    i.fa.fa-facebook.social__icon
+                li.social__item
+                  a.social__link(href="#!")
+                    i.fa.fa-twitter.social__icon
+                li.social__item
+                  a.social__link(href="#!")
+                    i.fa.fa-play.social__icon
+                li.social__item
+                  a.social__link(href="#!")
+                    i.fa.fa-google-plus.social__icon
+                li.social__item
+                  a.social__link(href="#!")
+                    i.fa.fa-vimeo.social__icon
+          .col-lg-3.col-md-6
+            article.footer__widget
+              h6.footer__heading= data.title[0]
+              ul.sublist
+                each item in data.list1
+                  li.sublist__item
+                    a.sublist__link(href="#!")= item
+          .col-lg-3.col-md-6
+            article.footer__widget
+              h6.footer__heading= data.title[1]
+              ul.sublist
+                each item in data.list2
+                  li.sublist__item
+                    a.sublist__link(href="#!")= item
+    .copyright @ COPYRIGHT WEBSITE 2018

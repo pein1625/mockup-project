@@ -1,0 +1,47 @@
+.button {
+  font-family: $montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  color: $blue;
+  background-color: $white;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  padding: 14px 40px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $gray-900;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    transition: top .2s ease-in-out;
+  }
+  &:hover {
+    color: $white;
+    border-color: $white;
+    &::after {
+      top: 0;
+    }
+  }
+  &__icon {
+    font-size: 14px;
+    margin-right: 9px;
+  }
+  &--blue {
+    background-color: $blue;
+    color: $white;
+    border-color: transparent;
+  }
+  &--transparent {
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
+  }
+}
