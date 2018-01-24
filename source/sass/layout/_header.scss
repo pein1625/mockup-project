@@ -1,0 +1,94 @@
+.header {
+  padding-top: 25px;
+  background: url('../images/bg-gradient.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  &--bg {
+    background: url('../images/banner-bg.jpg') no-repeat;
+    background-size: cover;
+  }
+  &__inner {
+    padding: 71px 0 108px;
+    text-align: center;
+  }
+  &__title {
+    font-family: $hind;
+    font-size: 35px;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 9px;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    font-family: $calibri;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: $white;
+  }
+}
+.home-banner {
+  padding: 80px 0;
+}
+.home-slider {
+  position: relative;
+  &__item {
+    overflow: hidden;
+  }
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+  }
+  .owl-dot {
+    padding: 0 10px;
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $gray-300;
+      background-color: $gray-300;
+      border-radius: 50%;
+    }
+    &.active span {
+      background-color: $blue;
+    }
+  }
+}
+.home-intro {
+  margin-bottom: 67px;
+  &__title {
+    font-family: $hind;
+    font-size: 35px;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 9px;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    font-family: $calibri;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: $white;
+    margin-bottom: 45px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    margin-bottom: 24px;
+  }
+}
+.home-video {
+  border-radius: 10px;
+  margin-bottom: 67px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+  overflow: hidden;
+  &__img {
+    width: 100%;
+  }
+}

@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-family: $montserrat;
   font-size: 12px;
   font-weight: 300;
@@ -6,11 +7,10 @@
   background-color: $white;
   border: 1px solid $blue;
   border-radius: 4px;
-  padding: 14px 40px 10px;
+  padding: 15px 40px 11px;
   cursor: pointer;
   position: relative;
   z-index: 1;
-  overflow: hidden;
   &::after {
     content: '';
     width: 100%;
@@ -18,16 +18,18 @@
     border-radius: 4px;
     background-color: $gray-900;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     z-index: -1;
-    transition: top .2s ease-in-out;
+    transition: transform .15s ease-in-out;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
   }
   &:hover {
     color: $white;
     border-color: $white;
     &::after {
-      top: 0;
+      transform: rotateX(0deg);
     }
   }
   &__icon {

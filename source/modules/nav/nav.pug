@@ -1,0 +1,30 @@
+mixin nav(menu)
+  nav.navigation
+    .navigation__wrapper.js-navigation-wrap
+      .container
+        .navigation__inner
+          a.logo(href="/")
+            img.logo__img(src="images/logo.png", alt="")
+          ul.menu.js-menu-dropdown
+            each item in menu
+              li.menu__item
+                a.menu__link(href="#!")= item
+          form.search.js-search
+            input.search__field
+            button.search__btn(type="submit")
+              i.fa.fa-search.search__icon
+          ul.user
+            li.user__item
+              a.user__btn.js-search-btn(href="#!")
+                img.user__icon(src="images/icon-search.png", alt="")
+            li.user__item
+              a.user__btn(href="#!")
+                img.user__icon(src="images/icon-user.png", alt="")
+            li.user__item
+              a.user__btn(href="#!")
+                img.user__icon(src="images/icon-unlock.png", alt="")
+          .menu-btn.js-menu-btn
+            .menu-btn__wrap
+              span.menu-btn__bar
+              span.menu-btn__bar
+              span.menu-btn__bar

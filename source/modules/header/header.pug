@@ -1,0 +1,32 @@
+include ../nav/nav
+include ../popup/popup
+
+mixin header(page)
+  header.header(class={"header--bg": page.title === "HOME"})
+    +nav(data.menu)
+    if (page.title === "HOME")
+      +popup-video
+      .home-banner
+        .container
+          .home-slider.owl-carousel.js-home-slider
+            each item in [1, 2, 3]
+              .home-slider__item
+                .row
+                  .col-md-6
+                    section.home-intro
+                      h1.home-intro__title LOREM IPSUM
+                      h6.home-intro__subtitle Consectetur adipiscing elit
+                      p.home-intro__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim vietnam.
+                      a.button.button--transparent.home-intro__btn(href="#!")
+                        i.fa.fa-paper-plane.button__icon
+                        | BUTTON
+                  .col-md-6
+                    .home-video
+                      .home-video__inner
+                        a.home-video__link.js-home-video-link(href="#!", data-url="https://www.youtube.com/embed/2qEOLdii3B4?rel=0")
+                          img.home-video__img(src="images/video.jpg", alt="")
+    else
+      .header__inner
+        .container
+          h1.header__title= page.title
+          h5.header__subtitle= page.subtitle

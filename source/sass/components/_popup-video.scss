@@ -1,0 +1,48 @@
+.popup-video {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1001;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: $black-opacity-5;
+  transition: opacity .3s .1s, display .1;
+  &.active {
+    display: flex;
+    opacity: 1;
+    transition: opacity .3s, display .1s .3s;
+  }
+  &__wrap {
+    width: 600px;
+    height: 340px;
+    position: relative;
+    @include respond-to ('phone-and-down') {
+      width: 400px;
+      height: 250px;
+    }
+    @include respond-to ('phone-and-down') {
+      width: 290px;
+      height: 150px;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid $gray-border;
+    color: $gray-800;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
