@@ -24,6 +24,12 @@
       },{
         "title": "new page",
         "url": "new"
+      },{
+        "title": "new page",
+        "url": "new"
+      },{
+        "title": "university page",
+        "url": "university"
       }
     ]
   }
