@@ -9,6 +9,12 @@
       },{
         "title": "button",
         "url": "button"
+      },{
+        "title": "card-grid",
+        "url": "card-grid"
+      },{
+        "title": "card-list",
+        "url": "card-list"
       }
     ]
   }

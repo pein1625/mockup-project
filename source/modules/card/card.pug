@@ -1,0 +1,22 @@
+mixin card-grid
+  article.card.card-grid.shadow
+    img.card-img-top.card-grid__img(src="images/img1.jpg", alt="product img")
+    .card-body
+      h5.card-title.card-grid__title
+        a(href="#!") Lorem ipsum
+      p.card-text.card-grid__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
+mixin card-list
+  article.card-list
+    a.card-list__imgwrap
+      img.card-list__img(src="images/card-list-img.png", alt="product img")
+    .card-list__body
+      h5.card-list__title
+        a(href="#!") Lorem ipsum dolor sit amet
+      .card-list__group
+        span.card-list__info
+          i.fa.fa-calendar-check-o.card-list__icon
+          | 21/01/2018
+        span.card-list__info
+          i.fa.fa-user-o.card-list__icon
+          | Donald Trump
+      p.card-list__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
