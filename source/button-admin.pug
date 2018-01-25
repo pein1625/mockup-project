@@ -1,0 +1,13 @@
+include modules/head/head
+include layout/admin-sidebar
+
+doctype html
+html
+  +head(head.home)
+  body
+    +admin-sidebar
+    section.body.js-body
+      button.admin-button.admin-button--blue View
+      button.admin-button.admin-button--violet Edit
+      button.admin-button.admin-button--red Delete
+    script(src="js/main.js")

@@ -36,6 +36,9 @@
       },{
         "title": "Admin Breadcrumb",
         "url": "admin-breadcrumb"
+      },{
+        "title": "Button Adim",
+        "url": "button-admin"
       }
     ]
   }

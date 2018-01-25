@@ -1,0 +1,17 @@
+.admin-button {
+  font-size: 14px;
+  color: $white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  &--blue {
+    background-color: $blue-lightest;
+  }
+  &--violet {
+    background-color: $violet;
+  }
+  &--red {
+    background-color: $red-lighter;
+  }
+}
