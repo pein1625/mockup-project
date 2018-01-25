@@ -21,6 +21,9 @@
       },{
         "title": "Admin Sidebar",
         "url": "admin-sidebar"
+      },{
+        "title": "new page",
+        "url": "new"
       }
     ]
   }

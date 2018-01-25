@@ -1,0 +1,20 @@
+.new {
+  padding: 115px 0 120px;
+}
+.new-content {
+  margin-bottom: 20px;
+}
+.new-aside {
+  margin-bottom: 78px;
+}
+.new-menu {
+  margin-top: -12px;
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__link {
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+  }
+}

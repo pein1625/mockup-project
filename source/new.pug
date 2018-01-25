@@ -1,0 +1,43 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/card/card
+include modules/pagination/pagination
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.new)
+    main.new
+      .container
+        .row
+          .col-xl-9.col-lg-8
+            section.new-content
+              h1.heading LOREM IPSUM DOR
+              ul.new-list
+                each item in [1, 2, 3, 4]
+                  li.new-list__item
+                    +card-list
+          .col-xl-3.col-lg-4
+            section.new-aside
+              h1.heading MENU NEW
+              ul.new-menu
+                li.new-menu__item
+                  a.new-menu__link(href="#!") Lorem ipsum dolor sit item 1
+                li.new-menu__item
+                  a.new-menu__link(href="#!") Lorem ipsum dolor sit amet item 2
+                li.new-menu__item
+                  a.new-menu__link(href="#!") Lorem ipsum dolor item 2
+                li.new-menu__item
+                  a.new-menu__link(href="#!") Lorem ipsum item 2
+                li.new-menu__item
+                  a.new-menu__link(href="#!") Lorem ipsum dolor sit item 2
+            section.new-aside
+              h1.heading SEARCH NEW
+              a.button.button--blue(href="#!")
+                i.fa.fa-search.button__icon
+                | SEARCH
+        +pagination
+    +footer(data)
+    script(src="js/main.js")
