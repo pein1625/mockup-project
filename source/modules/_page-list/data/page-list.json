@@ -33,6 +33,9 @@
       },{
         "title": "contact page",
         "url": "contact"
+      },{
+        "title": "Admin Breadcrumb",
+        "url": "admin-breadcrumb"
       }
     ]
   }

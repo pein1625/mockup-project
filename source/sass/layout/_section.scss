@@ -1,0 +1,17 @@
+.body {
+  width: calc(100% - 200px);
+  position: absolute;
+  top: 0;
+  right:0;
+  transition: 0.3s;
+  @include respond-to('phone-and-down') {
+    width: 100%;
+  }
+  &--active {
+    width: calc(100% - 200px);
+  }
+}
+.admin-container {
+  width: 100%;
+  padding: 0 25px;
+}

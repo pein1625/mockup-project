@@ -10,7 +10,10 @@ $(document).ready(function(){
   var $popupVideo = $('.js-popup-video');
   var $popupVideoSrc = $('.js-popup-video-src');
   var $popupVideoClose = $('.js-popup-video-close');
+  var $bodyWrap = $('.js-body');
+  var $sidebar = $('.js-sidebar');
   var $sidebarList = $('.js-sidebar-list');
+  var $sidebarResponsive = $('.js-btn-responsive');
 
   $menuBtn.on('click', function(){
     $(this).toggleClass('active');
@@ -49,5 +52,9 @@ $(document).ready(function(){
   });
   $sidebarList.on('click', function() {
     $(this).find('.js-sidebar__small-menu').slideToggle();
+  });
+  $sidebarResponsive.on('click', function() {
+    $bodyWrap.toggleClass('body--active');
+    $sidebar.toggleClass('sidebar--active');
   });
 });
