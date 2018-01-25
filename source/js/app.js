@@ -6,7 +6,7 @@ $(document).ready(function(){
   var $searchBtn = $('.js-search-btn');
   var $search = $('.js-search');
   var $homeSlider = $('.js-home-slider');
-  var $homeVideoLink = $('.js-home-video-link');
+  var $videoLink = $('.js-video-link');
   var $popupVideo = $('.js-popup-video');
   var $popupVideoSrc = $('.js-popup-video-src');
   var $popupVideoClose = $('.js-popup-video-close');
@@ -39,8 +39,9 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 6000
   });
-  $homeVideoLink.on('click', function(){
+  $videoLink.on('click', function(){
     var url = $(this).data('url');
+    console.log('helo');
     $popupVideoSrc.attr('src', url);
     $popupVideo.addClass('active');
   });

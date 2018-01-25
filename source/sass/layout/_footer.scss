@@ -30,29 +30,6 @@
     margin-bottom: 12px;
   }
 }
-.social {
-  margin-left: -12px;
-  @include clearfix;
-  &__item {
-    float: left;
-    padding: 0 12px;
-  }
-  &__link {
-    display: flex;
-    width: 35px;
-    height: 35px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $blue;
-    border-radius: 50%;
-    font-size: 16px;
-    color: $blue;
-    &:hover {
-      color: $white;
-      background-color: $blue;
-    }
-  }
-}
 .sublist {
   &__link {
     font-family: $calibri;
