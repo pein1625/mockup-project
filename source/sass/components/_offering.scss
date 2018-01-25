@@ -1,0 +1,26 @@
+.offering {
+  &__img {
+    width: 100%;
+    max-width: 556px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px $black-opacity-5;
+    margin-bottom: 60px;
+  }
+  &__body {
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-family: $hind;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 21px;
+  }
+  &__text {
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+}

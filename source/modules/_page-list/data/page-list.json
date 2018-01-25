@@ -34,6 +34,9 @@
         "title": "contact page",
         "url": "contact"
       },{
+        "title": "key page",
+        "url": "key"
+      },{
         "title": "Admin Breadcrumb",
         "url": "admin-breadcrumb"
       },{
