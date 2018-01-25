@@ -1,0 +1,22 @@
+include modules/head/head
+include modules/card/card
+
+doctype html
+html
+  +head(head.home)
+  body
+    .container
+      .row
+        .col-md-4.col-sm-6
+          +card-grid
+        .col-md-4.col-sm-6
+          +card-grid
+        .col-md-4.col-sm-6
+          +card-grid
+        .col-md-4.col-sm-6
+          +card-grid
+        .col-md-4.col-sm-6
+          +card-grid
+        .col-md-4.col-sm-6
+          +card-grid
+    script(src="js/main.js")

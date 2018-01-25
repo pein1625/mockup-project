@@ -1,0 +1,20 @@
+include modules/head/head
+include modules/card/card
+
+doctype html
+html
+  +head(head.home)
+  body
+    .container
+      .row
+        .col-xl-9.col-lg-8
+          ul
+            li
+              +card-list
+            li
+              +card-list
+            li
+              +card-list
+            li
+              +card-list
+    script(src="js/main.js")
