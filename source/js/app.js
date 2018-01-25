@@ -10,6 +10,7 @@ $(document).ready(function(){
   var $popupVideo = $('.js-popup-video');
   var $popupVideoSrc = $('.js-popup-video-src');
   var $popupVideoClose = $('.js-popup-video-close');
+  var $sidebarList = $('.js-sidebar-list');
 
   $menuBtn.on('click', function(){
     $(this).toggleClass('active');
@@ -45,5 +46,8 @@ $(document).ready(function(){
     var src = $popupVideoSrc.attr('src');
     console.log(src);
     $popupVideoSrc.attr('src', src);
+  });
+  $sidebarList.on('click', function() {
+    $(this).find('.js-sidebar__small-menu').slideToggle();
   });
 });

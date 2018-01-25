@@ -18,6 +18,9 @@
       },{
         "title": "home page",
         "url": "home"
+      },{
+        "title": "Admin Sidebar",
+        "url": "admin-sidebar"
       }
     ]
   }
