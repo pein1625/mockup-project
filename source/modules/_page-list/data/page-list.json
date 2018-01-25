@@ -15,6 +15,9 @@
       },{
         "title": "card-list",
         "url": "card-list"
+      },{
+        "title": "home page",
+        "url": "home"
       }
     ]
   }
