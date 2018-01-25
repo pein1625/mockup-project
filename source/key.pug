@@ -1,0 +1,18 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/offering/offering
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.key)
+    main
+      .container
+        section.key-offering
+          h1.heading LOREM IPSUM DOR
+          +offering
+          +offering
+    +footer(data)
+    script(src="js/main.js")
