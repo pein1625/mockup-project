@@ -1,0 +1,22 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/card/card
+include modules/pagination/pagination
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.university)
+    main.university
+      .container
+        section.university-content
+          h1.heading LOREM IPSUM DOR
+          .row
+            each item in [1, 2, 3, 4, 5, 6]
+              .col-lg-4.col-md-6
+                +card-grid
+        +pagination
+    +footer(data)
+    script(src="js/main.js")
