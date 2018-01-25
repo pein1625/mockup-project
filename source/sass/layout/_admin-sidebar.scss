@@ -11,6 +11,13 @@
   position: relative;
   left: 0;
   top: 0;
+  transition: 0.3s;
+  @include respond-to('phone-and-down') {
+    left: -200px;
+  }
+  &--active {
+    left: 0;
+  }
   &__logo {
     display: block;
     margin: auto;

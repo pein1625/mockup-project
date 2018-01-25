@@ -1,0 +1,47 @@
+.breadcrumb {
+  font-size: 14px;
+  color: $gray-darkers;
+  font-weight: 500;
+  border-bottom: solid 2px $white-darker;
+  border-radius: 0;
+  background-color: $white;
+  padding: 15px 0;
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    display: none;
+    @include respond-to('phone-and-down') {
+      display: inline-block;
+    }
+  }
+  &__list {
+    display: inline-block;
+    @include respond-to('phone-and-down') {
+      display: none;
+    }
+    &:last-child {
+      .breadcrumb__icon {
+        display: none;
+      }
+    }
+  }
+  &__icon {
+    margin: 0 15px;
+  }
+  &__search {
+    margin-left: auto;
+  }
+}
+.btn-responsive {
+  margin-right: 50px;
+  &__bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: $gray-darkers;
+    margin: 5px 0;
+  }
+}

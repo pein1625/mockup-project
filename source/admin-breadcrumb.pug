@@ -1,0 +1,12 @@
+include modules/head/head
+include modules/admin-breadcrumb/admin-breadcrumb
+include layout/admin-sidebar
+
+doctype html
+html
+  +head(head.home)
+  body
+    +admin-sidebar
+    section.body.js-body
+      +admin-breadcrumb('Admin', 'Breadcrumb', 'All Breadcrumb')
+    script(src="js/main.js")
