@@ -1,0 +1,38 @@
+.task {
+  padding: 32px 40px 40px 40px;
+  box-shadow: 0 4px 15px $black-opacity-5;
+  border-radius: 10px;
+  &__title {
+    font-family: $hind;
+    font-size: 24px;
+    font-weight: 600;
+    color: $gray-darker;
+    margin-bottom: -4px;
+  }
+  &__infowrap {
+    margin-bottom: 16px;
+  }
+  &__info {
+    font-family: $calibri;
+    font-size: 11px;
+    color: $gray-text;
+    margin-right: 29px;
+  }
+  &__icon {
+    margin-right: 6px;
+  }
+  &__text {
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+    margin-bottom: 23px;
+  }
+  &__btnwrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
