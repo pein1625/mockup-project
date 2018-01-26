@@ -2,20 +2,53 @@
   &__group {
     display: flex;
     margin-bottom: 20px;
+    position: relative;
+    &--search {
+      &::after {
+        content: '\f002';
+        font-family: 'FontAwesome';
+        font-size: 16px;
+        color: $gray-text;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &--select {
+      &::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        font-size: 16px;
+        color: $gray-text;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
   &__input,
-  &__textarea {
+  &__textarea,
+  &__select {
     flex: 1;
     border: 1px solid $blue;
     border-radius: 8px;
-    padding: 0 20px;
     font-family: $calibri;
     font-size: 16px;
-    color: $gray-darker;
+    color: $gray-text;
     line-height: 37px;
   }
-  &__input {
+  &__input,
+  &__select {
     height: 50px;
+    padding: 0 20px;
+  }
+  &__search,
+  &__select {
+    appearance: none;
+    max-width: 100%;
+    padding: 0 40px 0 20px;
   }
   &__textarea {
     padding: 3px 20px;
@@ -29,5 +62,44 @@
     & + & {
       margin-left: 26px;
     }
+  }
+  &__checkbox {
+    align-self: center;
+    margin-right: 15px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      border: 1px solid $blue-lighter;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $blue-light;
+    }
+    &::after {
+      content: '\f00c';
+      display: none;
+      font-family: 'FontAwesome';
+      font-size: 16px;
+      color: $white;
+      position: absolute;
+      z-index: 10;
+      left: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:checked::after {
+      display: inline-block;
+    }
+  }
+  &__checklabel {
+    align-self: center;
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+    margin-bottom: 0;
   }
 }

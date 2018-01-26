@@ -8,17 +8,13 @@ mixin nav(menu)
           ul.menu.js-menu-dropdown
             each item in menu
               li.menu__item
-                a.menu__link(href="#!")= item
-          form.search.js-search
-            input.search__field
-            button.search__btn(type="submit")
-              i.fa.fa-search.search__icon
+                a.menu__link(href=item.url)= item.name
           ul.user
             li.user__item
               a.user__btn.js-search-btn(href="#!")
                 img.user__icon(src="images/icon-search.png", alt="")
             li.user__item
-              a.user__btn(href="#!")
+              a.user__btn.js-register-btn(href="#!")
                 img.user__icon(src="images/icon-user.png", alt="")
             li.user__item
               a.user__btn(href="#!")

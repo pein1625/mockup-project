@@ -1,0 +1,64 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.support_page)
+    main.support-page
+      .container
+        .row
+          .col-lg-4
+            section.support-filter
+              h1.heading FILTER FORM
+              form.main-form
+                .main-form__group.main-form__group--search
+                  input.main-form__input.main-form__search(type="text", placeholder="Search filter...")
+                .main-form__group.main-form__group--select
+                  select.main-form__select
+                    option Item type...
+                    option Item 2
+                    option Item 3
+                    option Item 4
+                .main-form__group.main-form__group--select
+                  select.main-form__select
+                    option Current status...
+                    option Option 2
+                    option Option 3
+                .main-form__group
+                  input.main-form__input(type="date")
+                .main-form__group
+                    button.button.button--blue.main-form__btn.support-filter__btn(type="submit")
+                      i.fa.fa-search.button__icon
+                      | SAVE FILTER
+          .col-lg-8
+            section.support-table
+              h1.heading TABLE LIST
+              table.tbl
+                thead.tbl__head
+                  tr.tbl__trhead
+                    th.tbl__th
+                    th.tbl__th Id
+                    th.tbl__th Name
+                    th.tbl__th Service Type
+                    th.tbl__th Status
+                    th.tbl__th Created
+                    th.tbl__th Manager
+                tbody.tbl__body
+                  each item in [1, 2, 3, 4, 5]
+                    tr.tbl__tr
+                      td.tbl__td.tbl__td--first
+                        input.tbl__checkbox(type="checkbox")
+                      td.tbl__td 5
+                      td.tbl__td This is name task
+                      td.tbl__td Paypal support Case
+                      td.tbl__td Pending
+                      td.tbl__td 01/01/2018
+                      td.tbl__td Manager 1
+                tfoot.tbl__foot
+                  tr
+                    td.tbl__footcol
+    +footer(data)
+    script(src="js/main.js")

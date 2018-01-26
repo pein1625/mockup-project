@@ -1,12 +1,25 @@
 {
   "data": {
     "menu": [
-      "HOME",
-      "ABOUT US",
-      "KEY OFFERING",
-      "NEW",
-      "UNIVERSITY",
-      "CONTACT"
+      {
+        "name": "HOME",
+        "url": "home.html"
+      },{
+        "name": "ABOUT US",
+        "url": "about.html"
+      },{
+        "name": "KEY OFFERING",
+        "url": "key.html"
+      },{
+        "name": "NEW",
+        "url": "new.html"
+      },{
+        "name": "UNIVERSITY",
+        "url": "university.html"
+      },{
+        "name": "CONTACT",
+        "url": "contact.html"
+      }
     ]
   }
 }

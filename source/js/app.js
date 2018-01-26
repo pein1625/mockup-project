@@ -4,7 +4,11 @@ $(document).ready(function(){
   var $menuDropdown = $('.js-menu-dropdown');
   var $navWrap = $('.js-navigation-wrap');
   var $searchBtn = $('.js-search-btn');
-  var $search = $('.js-search');
+  var $search = $('.js-popup-search');
+  var $searchClose = $('.js-popup-search-close');
+  var $registerBtn = $('.js-register-btn');
+  var $register = $('.js-popup-register');
+  var $registerClose = $('.js-popup-register-close');
   var $homeSlider = $('.js-home-slider');
   var $videoLink = $('.js-video-link');
   var $popupVideo = $('.js-popup-video');
@@ -28,8 +32,16 @@ $(document).ready(function(){
     }
   });
   $searchBtn.on('click', function(){
-    console.log('heelo');
-    $search.toggleClass('active');
+    $search.addClass('active');
+  });
+  $searchClose.on('click', function(){
+    $search.removeClass('active');
+  });
+  $registerBtn.on('click', function(){
+    $register.addClass('active');
+  });
+  $registerClose.on('click', function(){
+    $register.removeClass('active');
   });
   $homeSlider.owlCarousel({
     loop: true,

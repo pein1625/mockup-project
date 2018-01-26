@@ -4,6 +4,8 @@ include ../popup/popup
 mixin header(page)
   header.header(class={"header--bg": page.title === "HOME"})
     +nav(data.menu)
+    +popup-search
+    +popup-register
     if (page.title === "HOME")
       +popup-video
       .home-banner
