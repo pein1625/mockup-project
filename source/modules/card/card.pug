@@ -1,10 +1,15 @@
 mixin card-grid
-  article.card.card-grid.shadow
-    img.card-img-top.card-grid__img(src="images/img1.jpg", alt="product img")
-    .card-body
+  article.card.card-grid
+    .card-grid__imgwrap
+      img.card-grid__img(src="images/img1.jpg", alt="product img")
+      .card-grid__btnwrap
+        a.button.button--blue.card-grid__btn(href="#!")
+          i.fa.fa-file-image-o.button__icon
+          | CHOOSE FILE
+    .card-grid__body
       h5.card-title.card-grid__title
         a(href="#!") Lorem ipsum
-      p.card-text.card-grid__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
+      p.card-grid__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
 mixin card-list
   article.card-list
     a.card-list__imgwrap

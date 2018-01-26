@@ -37,6 +37,9 @@
         "title": "key page",
         "url": "key"
       },{
+        "title": "profile page",
+        "url": "profile"
+      },{
         "title": "Admin Breadcrumb",
         "url": "admin-breadcrumb"
       },{
