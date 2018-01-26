@@ -1,0 +1,46 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/card/card
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.profile)
+    main.profile
+      .container
+        .row
+          .col-lg-4
+            section.profile-info
+              h1.heading MY PROFILE
+              .profile-info__inner
+                +card-grid
+          .col-lg-8
+            form.main-form.profile-form
+              h1.heading INFORMATION
+              .profile-form__group
+                .main-form__group
+                  input.main-form__input(type="text", placeholder="Username...")
+                .main-form__group
+                  input.main-form__input(type="email", placeholder="Email...")
+                .row
+                  .col-sm-6
+                    .main-form__group
+                      input.main-form__input(type="password", placeholder="Password...")
+                  .col-sm-6
+                    .main-form__group
+                      input.main-form__input(type="password", placeholder="Re-Password...")
+              h1.heading PERSONAL INFORMATION
+              .profile-form__group
+                .main-form__group
+                  input.main-form__input(type="email", placeholder="Paypal email...")
+              .main-form__group.profile-form__btnwrap
+                a.button.main-form__btn(href="#!")
+                  i.fa.fa-yelp.button__icon
+                  | CANCEL
+                button.button.button--blue.main-form__btn(href="#!", type="submit")
+                  i.fa.fa-paper-plane.button__icon
+                  | SUBMIT
+    +footer(data)
+    script(src="js/main.js")

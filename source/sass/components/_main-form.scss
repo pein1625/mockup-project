@@ -23,6 +23,11 @@
   }
   &__btn {
     margin-top: 10px;
-    margin-left: auto;
+    &:first-child {
+      margin-left: auto;
+    }
+    & + & {
+      margin-left: 26px;
+    }
   }
 }
