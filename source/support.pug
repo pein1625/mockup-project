@@ -1,0 +1,30 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/task/task
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.support)
+    main.support
+      .container
+        section.support__content
+          h1.heading LOREM IPSUM DOR
+          .support-task
+            +task
+          section.support-discussion
+            h3.support-discussion__title Discussion
+            .discussion
+              h6.discussion__title User 1 wrote 1/1
+              p.discussion__text Lorem ipsum dolor sit amet, consectetur  adipiscing elit. In eleifend ma gna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat, Cras cursus mauris vitae  eros volut pat... Lorem ipsum dolor sit amet, consectetur  adipiscing elit. In eleifend ma gna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat, Crascursus mauris vitae eros volutpat Crascursus mauris vitae eros...
+              h6.discussion__title.discussion__title--right Manager 1 wrote 1/1
+          form.main-form.support-form
+            .main-form__group
+              textarea.main-form__textarea(rows="3", placeholder="Message...")
+            .main-form__group
+              button.button.button--blue.main-form__btn.support-form__btn(type="submit")
+                i.fa.fa-paper-plane.button__icon
+                | SUBMIT
+    +footer(data)

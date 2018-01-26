@@ -1,0 +1,47 @@
+.support {
+  padding: 115px 0 100px;
+}
+.support-task {
+  margin-bottom: 53px;
+}
+.support-discussion {
+  margin-bottom: 34px;
+  &__title {
+    font-family: $hind;
+    font-size: 24px;
+    font-weight: 600;
+    color: $gray-darker;
+  }
+}
+.discussion {
+  &__title {
+    font-family: $hind;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-darker;
+    position: relative;
+    margin-bottom: 9px;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background-color: $blue;
+      margin-right: 20px;
+    }
+    &--right {
+      text-align: right;
+    }
+  }
+  &__text {
+    font-family: $calibri;
+    font-size: 16px;
+    color: $gray-text;
+    margin-bottom: 21px;
+  }
+}
+.support-form {
+  &__btn {
+    margin-top: 19px;
+  }
+}
