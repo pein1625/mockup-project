@@ -1,0 +1,41 @@
+include modules/head/head
+include modules/admin-sidebar/admin-sidebar
+include modules/admin-breadcrumb/admin-breadcrumb
+include modules/admin-title/admin-title
+
+doctype html
+html
+  +head(head.home)
+  body
+    .admin-layout
+      +admin-sidebar
+      .admin-body.js-admin-body
+        +admin-breadcrumb('Admin', 'Users', 'All user')
+        +admin-title('User Page new')
+        form.admin-form
+          .admin-form__block
+            .admin-form__body
+              .admin-form__group
+                input.admin-form__input(type="text", placeholder="Full name...")
+              .admin-form__group
+                input.admin-form__input(type="Email", placeholder="Email...")
+              .admin-form__group
+                input.admin-form__input(type="text", placeholder="Phone...")
+              .admin-form__group
+                input.admin-form__input(type="text", placeholder="Address...")
+              .admin-form__group.admin-form__group--mb0
+                input.admin-form__input(type="text", onfocus='(this.type="date")', onblur='(this.type="text")', placeholder="Created...")
+            .admin-form__imgwrap
+              img.admin-form__img(src="images/default.png", alt="")
+          .admin-form__block
+            .admin-form__group.admin-form__group--mb0
+              select.admin-form__select.admin-form__select--first
+                option Level
+                option Level 1
+                option Level 2
+                option Level 3
+              .admin-form__btnwrap
+                button.button.admin-form__btn.admin-form__btn--blue(type="submit")
+                  i.fa.fa-search.button__icon
+                  | Save
+    script(src="js/main.js")

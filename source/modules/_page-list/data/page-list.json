@@ -57,6 +57,9 @@
       },{
         "title": "Admin support page edit",
         "url": "support-page-edit"
+      },{
+        "title": "Admin user page new",
+        "url": "user-page-new"
       }
     ]
   }
