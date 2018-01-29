@@ -1,0 +1,16 @@
+.admin-title {
+  padding-top: 16px;
+  padding-bottom: 9px;
+  background-color: $white;
+  font-family: $roboto;
+  font-weight: 300;
+  &__title {
+    font-size: 24px;
+    color: $black-lighter;
+    margin-bottom: 3px;
+  }
+  &__subtitle {
+    font-size: 12px;
+    color: $gray;
+  }
+}

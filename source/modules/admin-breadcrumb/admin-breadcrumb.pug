@@ -1,20 +1,16 @@
+include ../admin-search/admin-search
+
 mixin admin-breadcrumb(...list)
-  .breadcrumb
-    .admin-container
-      .breadcrumb__wrap
-        .breadcrumb__btn.btn-responsive.js-btn-responsive
-          span.btn-responsive__bar
-          span.btn-responsive__bar
-          span.btn-responsive__bar
-        ul.breadcrumb__lists
-          each item, index in list
-            if (index === list.lenght - 1)
-              li.breadcrumb__list.breadcrumb__list--active #{item}
-            else
-              li.breadcrumb__list
-                a.breadcrumb__link(href="") #{item}
-                  i.breadcrumb__icon.fa.fa-angle-right
-        form.breadcrumb__search.form
-          input.form__input(type="text" placeholder="Search project...")
-          button.form__button
-            i.form__icon.fa.fa-search
+  .breadcrumb-wrap
+    ul.breadcrumb
+      each item, index in list
+        if (index === list.length - 1)
+          li.breadcrumb__item.breadcrumb__item--last
+            span.breadcrumb__text= item
+        else
+          li.breadcrumb__item
+            a.breadcrumb__link(href="#!")= item
+    .breadcrumb__widget
+      +admin-search
+      span.sidebar-btn.js-sidebar-btn
+        i.fa.fa-bars

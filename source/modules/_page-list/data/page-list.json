@@ -19,9 +19,6 @@
         "title": "home page",
         "url": "home"
       },{
-        "title": "Admin Sidebar",
-        "url": "admin-sidebar"
-      },{
         "title": "new page",
         "url": "new"
       },{
@@ -46,11 +43,17 @@
         "title": "support page",
         "url": "support-page"
       },{
+        "title": "Admin Sidebar",
+        "url": "admin-sidebar"
+      },{
         "title": "Admin Breadcrumb",
         "url": "admin-breadcrumb"
       },{
         "title": "Button Adim",
         "url": "button-admin"
+      },{
+        "title": "Admin new page new",
+        "url": "new-page-new"
       }
     ]
   }

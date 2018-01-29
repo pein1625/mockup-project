@@ -1,0 +1,23 @@
+.admin-search {
+  display: flex;
+  width: 300px;
+  padding: 0;
+  margin-left: auto;
+  position: relative;
+  &__input {
+    flex: 1;
+    padding-right: 40px;
+  }
+  &__btn {
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    background: 0;
+    color: $gray-dark;
+  }
+}
