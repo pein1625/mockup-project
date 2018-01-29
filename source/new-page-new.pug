@@ -1,0 +1,48 @@
+include modules/head/head
+include modules/admin-sidebar/admin-sidebar
+include modules/admin-breadcrumb/admin-breadcrumb
+include modules/admin-title/admin-title
+
+doctype html
+html
+  +head(head.home)
+  body
+    .admin-layout
+      +admin-sidebar
+      .admin-body.js-admin-body
+        +admin-breadcrumb('Admin', 'Users', 'All user')
+        +admin-title
+        form.admin-form
+          .admin-form__block
+            .admin-form__body
+              .admin-form__group
+                input.admin-form__input(type="text", placeholder="Name...")
+              .admin-form__group
+                textarea.admin-form__textarea(rows="4", placeholder="Description...")
+            .admin-form__imgwrap
+              img.admin-form__img(src="images/default.png", alt="")
+          .admin-form__block
+            .admin-form__group.admin-form__group--mb0
+              select.admin-form__select.admin-form__select--first
+                option Author
+                option Author 1
+                option Author 2
+                option Author 3
+              select.admin-form__select
+                option Category
+                option Category 1
+                option Category 2
+                option Category 3
+              select.admin-form__select
+                option Status
+                option Status 1
+                option Status 2
+                option Status 3
+              .admin-form__btnwrap
+                a.button.admin-form__btn.admin-form__btn--first(href="#!")
+                  i.fa.fa-repeat.button__icon
+                  | Back to list
+                button.button.admin-form__btn.admin-form__btn--blue(type="submit")
+                  i.fa.fa-search.button__icon
+                  | Save
+    script(src="js/main.js")

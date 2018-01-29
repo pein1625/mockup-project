@@ -1,21 +1,110 @@
-.form {
-  display: inline-block;
-  width: 300px;
-  height: 40px;
-  border: solid 1px $white-darker;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  &__input {
-    width: calc(100% - 50px);
-    border: none;
-    padding: 9px 15px;
+.admin-form {
+  padding: 25px 25px 1px 25px;
+  &__block {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 26px;
+    background-color: $white;
+    margin-bottom: 25px;
+    border: 1px solid $gray-border;
   }
-  &__button {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    right: 15px;
-    top: 7px;
+  &__body {
+    flex: 1;
+  }
+  &__group {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 15px;
+    &--mb0 {
+      margin-bottom: 0;
+    }
+  }
+  &__input,
+  &__textarea,
+  &__select {
+    min-width: 0;
+    flex: 1;
+    font-family: $roboto;
+    font-size: 14px;
+    color: $gray-text;
+    border: 1px solid $gray-border;
+    border-radius: 4px;
+    color: $gray-dark;
+    padding: 9px 26px 8px;
+    resize: none;
+  }
+  &__select {
+    display: inline-block;
+    flex: 0 0 150px;
+    margin-left: 15px;
+    &--first {
+      margin-left: 0;
+    }
+  }
+  &__btnwrap {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+  }
+  &__btn {
+    min-width: 134px;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 14px;
+    padding: 9px 21px 8px;
+    border: 1px solid $gray-border;
+    color: $gray-dark;
+    margin-left: 15px;
+    &--first {
+      margin-left: 0;
+    }
+    &--blue {
+      color: $white;
+      background-color: $blue-lighter;
+    }
+  }
+  &__imgwrap {
+    border: 1px solid $gray-border;
+    border-radius: 4px;
+    margin-left: 25px;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  @include respond-to('desktop-and-down') {
+    &__select {
+      width: 100%;
+      flex: 1 0 100%;
+      margin: 0 0 15px 0;
+    }
+  }
+  @include respond-to('phone-and-down') {
+    padding: 25px 15px;
+    &__block {
+      padding: 25px 15px;
+    }
+    &__input,
+    &__textarea,
+    &__select {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__body {
+      min-width: 100%;
+    }
+    &__imgwrap {
+      order: -1;
+      margin: 0 auto 25px;
+    }
+    &__btnwrap {
+      margin-bottom: -15px;
+    }
+    &__btn {
+      flex: 1 0 100%;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
   }
 }

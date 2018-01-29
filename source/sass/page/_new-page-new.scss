@@ -1,0 +1,9 @@
+.admin-container {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  @include respond-to('phone-and-down') {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

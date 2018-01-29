@@ -1,88 +1,116 @@
-.sidebar{
+.sidebar {
+  display: flex;
+  flex-direction: column;
   width: 200px;
   height: 100vh;
-  font-family: 'Roboto';
-  font-size: 14px;
-  color: $white;
+  min-height: 100vh;
   background-color: $blue-darkest;
-  padding: 0 15px;
-  padding-top: 20px;
-  overflow: hidden;
-  position: relative;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  transition: 0.3s;
-  @include respond-to('phone-and-down') {
-    left: -200px;
-  }
-  &--active {
-    left: 0;
-  }
-  &__logo {
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-  }
+  transition: left .3s linear;
+  overflow-y: auto;
+  overflow-x: hidden;
   &__heading {
-    opacity: 0.6;
-    margin-bottom: 5px;
+    font-family: $roboto;
+    color: $white-darkest;
+    padding: 0 16px;
+    margin-bottom: 9px;
   }
-  &__content {
-    margin: 0 -15px;
-  }
-  &__list {
-    padding: 10px 15px;
-    transition: 0.3s;
-    &:hover {
-      background-color: $blue-darkests;
-      cursor: pointer;
+  @include respond-to('tablet-and-down') {
+    left: -200px;
+    &.active {
+      left: 0;
     }
-    &--child {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
+  }
+}
+.sidebar-logo {
+  padding: 21px 35px;
+  &__img {
+    width: 100%;
+  }
+}
+.sidebar-menu {
+  &__link {
+    display: block;
+    padding: 9px 14px;
+    color: $white;
+    font-family: $roboto;
+    font-size: 14px;
+    &:hover {
+      color: $white;
+    }
+    &--caret {
+      position: relative;
+      &::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
       }
     }
   }
   &__icon {
-    margin-right: 15px;
-    &--right {
-      float: right;
-      margin-right: 0;
+    margin-right: 16px;
+  }
+}
+.sidebar-submenu {
+  display: none;
+  margin-top: -5px;
+  background-color: $blue-darkests;
+  &__link {
+    display: block;
+    font-size: 16px;
+    color: $white-darkest;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 15px 5px 44px;
+    &:hover {
+      color: $white-darkest;
     }
-    &--online {
-      color: $green;
-      margin-right: 7px;
-    }
   }
-  &__small-menu {
-    display: none;
-    margin-left: 27px;
-    margin-top: 8px;
-  }
-  &__admin {
-    width: 100%;
-    font-size: 13px;
-    border-top: solid 1px $blue-lightest;
-    background-color: $blue-darkest;
-    padding: 0 15px;
-    padding-top: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  &__avatar {
+}
+.sidebar-user {
+  display: flex;
+  margin-top: auto;
+  border: 1px solid $blue-lightest;
+  border-bottom: 0;
+  padding: 13px 16px 8px;
+  &__img {
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
-  &__admin-wrap {
-    width: calc(100% - 40px);
-    padding-left: 15px;
-    float: right;
+    margin-right: 14px;
   }
   &__name {
-    font-weight: 500;
+    font-family: $roboto;
+    font-size: 13px;
+    color: $white;
+    margin-bottom: 1px;
+  }
+  &__state {
+    font-size: 12px;
+    color: $white-darkest;
     margin-bottom: 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      margin-right: 7px;
+      position: relative;
+      top: 1px;
+    }
+    &.online::before {
+      background-color: $green;
+    }
+    &.offline::before {
+      background-color: $red;
+    }
   }
 }
