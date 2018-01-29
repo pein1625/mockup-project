@@ -1,4 +1,6 @@
-mixin admin-title
+include ../admin-search/admin-search
+
+mixin admin-title(title)
   .admin-title.admin-container
-    h3.admin-title__title New Page new
+    h3.admin-title__title= title
     h6.admin-title__subtitle Lorem ipsum dolor
