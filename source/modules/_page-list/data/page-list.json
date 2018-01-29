@@ -40,8 +40,11 @@
         "title": "profile page",
         "url": "profile"
       },{
-        "title": "support page",
+        "title": "support detail",
         "url": "support"
+      },{
+        "title": "support page",
+        "url": "support-page"
       },{
         "title": "Admin Breadcrumb",
         "url": "admin-breadcrumb"

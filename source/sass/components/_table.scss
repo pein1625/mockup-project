@@ -1,0 +1,95 @@
+.tbl {
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 4px 15px $black-opacity-5;
+  border-radius: 8px;
+  &__footcol {
+    height: 43px;
+  }
+  &__trhead {
+    border-bottom: 1px solid $blue;
+  }
+  &__tr {
+    border-bottom: 1px dashed $blue-white;
+  }
+  &__th,
+  &__td {
+    font-family: $calibri;
+    font-size: 16px;
+    padding: 19px 10px 6px;
+    color: $gray-text;
+  }
+  &__td--first {
+    padding-left: 20px;
+  }
+  &__th {
+    font-family: $hind;
+    font-weight: 600;
+    color: $gray-darker;
+  }
+  @include respond-to('phone-and-down') {
+    box-shadow: 0 0 0;
+    &__body {
+
+    }
+    &__trhead {
+      border-bottom: 0;
+    }
+    &__th {
+      display: block;
+      height: 0;
+      font-size: 0;
+      padding: 0;
+    }
+    &__tr {
+      display: block;
+      border-bottom: 0;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px $black-opacity-5;
+    }
+    &__td {
+      display: block;
+      border-bottom: 1px dashed $blue-white;
+      position: relative;
+      padding: 13px 10px 12px 150px;
+      &::before {
+        content: '';
+        display: flex;
+        width: 150px;
+        height: 100%;
+        align-items: center;
+        font-family: $hind;
+        font-weight: 600;
+        color: $gray-darker;
+        position: absolute;
+        left: 15px;
+        top: 0;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:nth-child(1)::before {
+        z-index: -1;
+      }
+      &:nth-child(2)::before {
+        content: 'Id';
+      }
+      &:nth-child(3)::before {
+        content: 'Name';
+      }
+      &:nth-child(4)::before {
+        content: 'Service Type';
+      }
+      &:nth-child(5)::before {
+        content: 'Status';
+      }
+      &:nth-child(6)::before {
+        content: 'Created';
+      }
+      &:nth-child(7)::before {
+        content: 'Manager';
+      }
+    }
+  }
+}

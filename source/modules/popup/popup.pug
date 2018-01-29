@@ -4,3 +4,43 @@ mixin popup-video
       iframe.popup-video__video.js-popup-video-src(frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
       button.popup-video__close.js-popup-video-close
         i.fa.fa-times
+mixin popup-search
+  .popup.js-popup-search
+    .popup__inner
+      .popup__close.js-popup-search-close
+        i.fa.fa-times
+      .popup__logo
+        img.popup__logoimg(src="images/logo.png", alt="logo")
+      h1.heading.popup__heading SEARCH
+      form.main-form
+        .main-form__group
+          input.main-form__input.popup__input(type="text", placeholder="Enter your keyword...")
+        .main-form__group
+          button.button.main-form__btn(type="submit")
+            i.fa.fa-search.button__icon
+            | SEARCH
+mixin popup-register
+  .popup.js-popup-register.popup-register
+    .popup__inner
+      .popup__close.js-popup-register-close
+        i.fa.fa-times
+      .popup__logo
+        img.popup__logoimg(src="images/logo.png", alt="logo")
+      h1.heading.popup__heading REGISTER
+      form.main-form
+        .main-form__group
+          input.main-form__input.popup__input(type="email", placeholder="Enter your email...")
+        .row
+          .col-sm-6
+            .main-form__group
+              input.main-form__input.popup__input(type="password", placeholder="Enter new password...")
+          .col-sm-6
+            .main-form__group
+              input.main-form__input.popup__input(type="password", placeholder="Enter new password again...")
+        .main-form__group
+          input.main-form__checkbox(type="checkbox")
+          label.main-form__checklabel.popup__checklabel Lorem ipsum dolor sit amet
+        .main-form__group
+          button.button.main-form__btn(type="submit")
+            i.fa.fa-paper-plane.button__icon
+            | REGISTER

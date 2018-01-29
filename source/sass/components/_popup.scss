@@ -1,0 +1,80 @@
+.popup {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: $black-opacity-5;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: transform .25s ease-in-out;
+  &.active {
+    transform: rotateY(0deg);
+  }
+  &__inner {
+    width: 750px;
+    margin-right: 15px;
+    padding: 60px 68px 40px;
+    background: url('../images/bg-gradient.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+    @include respond-to('tablet-and-down') {
+      width: 700px;
+    }
+    @include respond-to('phone-and-down') {
+      width: 100%;
+      height: 100%;
+      padding: 60px 15px 30px;
+      margin-right: 0;
+      border-radius: 0;
+      overflow: auto;
+    }
+  }
+  &__close {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $white;
+    border-radius: 50%;
+    color: $white;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: $blue;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    @include respond-to('phone-and-down') {
+      right: 25px;
+      top: 25px;
+
+    }
+  }
+  &__logo {
+    float: right;
+    @include respond-to('smallphone-and-down') {
+      display: none;
+    }
+  }
+  &__heading {
+    margin-top: 21px;
+    color: $white;
+  }
+  &__input {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue-lighter;
+    &::placeholder {
+      color: $gray-border;
+    }
+  }
+  &__checklabel {
+    color: white;
+  }
+}
