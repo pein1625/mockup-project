@@ -1,12 +1,16 @@
 .admin-button {
+  display: inline-block;
   font-size: 14px;
   color: $white;
   font-weight: 500;
   border: none;
   border-radius: 5px;
   padding: 8px 18px;
-  &--blue {
-    background-color: $blue-lightest;
+  &:hover {
+    color: $white;
+  }
+  &--green {
+    background-color: $green-lighter;
   }
   &--violet {
     background-color: $violet;

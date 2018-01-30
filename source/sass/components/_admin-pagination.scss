@@ -1,0 +1,29 @@
+.admin-paging-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 35px 25px;
+  @include respond-to('phone-and-down') {
+    padding-right: 15px;
+  }
+}
+.admin-paging {
+  &__item {
+    &:first-child,
+    &:last-child {
+      .admin-paging__link {
+        border-radius: 0;
+      }
+    }
+  }
+  &__link {
+    color: $black-lighter;
+    font-family: $roboto;
+    font-size: 16px;
+    padding: 9px 16px;
+    &:hover {
+      color: $white;
+      background-color: $blue-lighten;
+    }
+  }
+}
