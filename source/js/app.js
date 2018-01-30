@@ -20,6 +20,7 @@ $(document).ready(function(){
   var $sidebarDropdown = $('.js-sidebar-dropdown');
   var $sidebarBtn = $('.js-sidebar-btn');
   var $adminLabel = $('.js-label');
+  var $countTo = $('.js-count-number');
 
   $menuBtn.on('click', function(){
     $(this).toggleClass('active');
@@ -79,4 +80,5 @@ $(document).ready(function(){
   $adminLabel.on('click', function() {
     $(this).addClass('user__label--checked');
   });
+  $countTo.countTo();
 });
