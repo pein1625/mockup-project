@@ -10,3 +10,15 @@ mixin pagination
       li.page-item.paging__item
         a.page-link.paging__link(href="#!")
           i.fa.fa-angle-double-right.paging__icon
+mixin admin-pagination
+  nav.admin-paging-wrap
+    ul.pagination.admin-paging
+      li.page-item.admin-paging__item
+        a.page-link.admin-paging__link.admin-paging__link--first(href="#!")
+          i.fa.fa-angle-double-left.admin-paging__icon
+      each item in [1, 2, 3]
+        li.page-item.admin-paging__item
+          a.page-link.admin-paging__link(href="#!")= item
+      li.page-item.admin-paging__item
+        a.page-link.admin-paging__link.admin-paging__link--last(href="#!")
+          i.fa.fa-angle-double-right.admin-paging__icon

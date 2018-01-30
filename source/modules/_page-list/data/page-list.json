@@ -70,6 +70,9 @@
         "title": "Admin Signup page",
         "url": "admin-signup"
       },{
+        "title": "Admin video page list",
+        "url": "video-page-list"
+      },{
         "title": "Admin Count module",
         "url": "admin-count"
       }

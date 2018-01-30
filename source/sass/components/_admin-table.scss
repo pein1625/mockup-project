@@ -1,0 +1,93 @@
+.admin-tbl {
+  font-family: $roboto;
+  width: 100%;
+  &__tr {
+    &:nth-child(odd) {
+      background-color: #fafafa;
+    }
+  }
+  &__th {
+    padding: 29px 14px 27px;
+    font-size: 16px;
+    color: $blue-darkest;
+    font-weight: 600;
+  }
+  &__td {
+    padding: 10px 14px;
+    font-size: 16px;
+    color: $black-lighter;
+  }
+  &__checkbox {
+    padding-left: 28px;
+  }
+  &__action {
+    width: 250px;
+  }
+  &__btnwrap {
+    @include clearfix;
+  }
+  &__btn {
+    float: left;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include respond-to('tablet-and-down') {
+    &__thead,
+    &__th,
+    &__tbody,
+    &__tr,
+    &__td {
+      display: block;
+    }
+    &__thead,
+    &__th {
+      height: 0;
+      overflow: hidden;
+    }
+    &__tr {
+      padding-top: 10px;
+    }
+    &__td {
+      padding-left: 40%;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: 'abc';
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        padding-left: 15px;
+        font-weight: 600;
+        color: $blue-darkest;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+      }
+    }
+    &__btn {
+      margin-bottom: 10px;
+    }
+    &__checkbox::before {
+      content: '#';
+    }
+    &__id::before {
+      content: 'Id';
+    }
+    &__name::before {
+      content: 'Name';
+    }
+    &__category::before {
+      content: 'Category';
+    }
+    &__author::before {
+      content: 'Author';
+    }
+    &__action::before {
+      content: 'Action';
+    }
+  }
+}
