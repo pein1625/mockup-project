@@ -69,6 +69,9 @@
       },{
         "title": "Admin Signup page",
         "url": "admin-signup"
+      },{
+        "title": "Admin Count module",
+        "url": "admin-count"
       }
     ]
   }
