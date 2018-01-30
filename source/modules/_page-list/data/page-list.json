@@ -63,6 +63,12 @@
       },{
         "title": "Admin support page staff reply",
         "url": "support-page-staff-reply"
+      },{
+        "title": "Admin Signin page",
+        "url": "admin-signin"
+      },{
+        "title": "Admin Signup page",
+        "url": "admin-signup"
       }
     ]
   }

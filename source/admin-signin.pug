@@ -1,0 +1,9 @@
+include modules/head/head
+include modules/admin-signin/admin-signin
+
+doctype html
+html
+  +head(head.home)
+  body
+    +admin-signin
+    script(src="js/main.js")
