@@ -12,11 +12,11 @@ html
       +admin-sidebar
       .admin-body.js-admin-body
         +admin-breadcrumb('Admin', 'Users', 'All user')
-        +admin-title('Video Page list')
+        +admin-title('Support Page list')
         form.admin-form
           .admin-form__block
             .admin-form__group.admin-form__group--mb0
-              input.admin-form__select.admin-form__select--first(type="text", placeholder="Id Videos...")
+              input.admin-form__select.admin-form__select--first(type="text", placeholder="Id Support...")
               input.admin-form__select(type="text", placeholder="Created date..." onfocus="(this.type='date')", onblur="(this.type='text')")
               select.admin-form__select
                 option Category
@@ -24,10 +24,10 @@ html
                 option Category 2
                 option Category 3
               select.admin-form__select
-                option User created
-                option User created 1
-                option User created 2
-                option User created 3
+                option User handle
+                option User handle 1
+                option User handle 2
+                option User handle 3
               .admin-form__btnwrap
                 a.button.admin-form__btn(href="#!")
                   i.fa.fa-undo.button__icon
@@ -41,9 +41,10 @@ html
                 tr
                   th.admin-tbl__th.admin-tbl__checkbox #
                   th.admin-tbl__th Id
-                  th.admin-tbl__th Name
+                  th.admin-tbl__th Username
                   th.admin-tbl__th Category
                   th.admin-tbl__th Author
+                  th.admin-tbl__th Staff
                   th.admin-tbl__th Action
               tbody.admin-tbl__tbody
                 each item in [1, 2, 3, 4, 5]
@@ -51,9 +52,10 @@ html
                     td.admin-tbl__td.admin.admin-tbl__checkbox
                       input(type="checkbox")
                     td.admin-tbl__td.admin-tbl__id 1
-                    td.admin-tbl__td.admin-tbl__name User Name Lorem
+                    td.admin-tbl__td.admin-tbl__username User Name Lorem
                     td.admin-tbl__td.admin-tbl__category Category 1
                     td.admin-tbl__td.admin-tbl__author Author 1
+                    td.admin-tbl__td.admin-tbl__staff Staff 1
                     td.admin-tbl__td.admin-tbl__action
                       .admin-tbl__btnwrap
                         a.admin-button.admin-button--green.admin-tbl__btn(href="#!") View

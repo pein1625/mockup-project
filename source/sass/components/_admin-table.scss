@@ -80,11 +80,17 @@
     &__name::before {
       content: 'Name';
     }
+    &__username::before {
+      content: 'Username';
+    }
     &__category::before {
       content: 'Category';
     }
     &__author::before {
       content: 'Author';
+    }
+    &__staff::before {
+      content: 'Staff';
     }
     &__action::before {
       content: 'Action';
