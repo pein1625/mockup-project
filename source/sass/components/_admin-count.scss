@@ -7,6 +7,9 @@
     border: solid 1px $gray-border;
     background-color: $white;
     padding: 25px 0;
+    @include respond-to('phone-and-down') {
+      margin: 15px 0;
+    }
   }
   &__element {
     margin: 0 10px;

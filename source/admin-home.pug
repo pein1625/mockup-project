@@ -1,0 +1,38 @@
+include modules/head/head
+include modules/admin-sidebar/admin-sidebar
+include modules/admin-breadcrumb/admin-breadcrumb
+include modules/admin-title/admin-title
+include modules/admin-count/admin-count
+
+doctype html
+html
+  +head(head.home)
+  body
+    .admin-layout.admin-home
+      +admin-sidebar
+      .admin-body.js-admin-body
+        +admin-breadcrumb('Admin', 'Home')
+        +admin-title('Home page')
+        .admin-home__body
+          .admin-home__counts
+            +admin-count
+          .row
+            each item in ['Recent Members', 'Recent Videos', 'Recent Invoices', 'Recent Tasks']
+              .col-sm-6
+                .admin-home__wrap
+                  p.admin-home__heading #{item}
+                  form.admin-form.admin-home__form
+                    .admin-form__block.admin-form__block--pd0
+                      table.admin-tbl
+                        thead.admin-tbl__thead
+                          tr
+                            th.admin-tbl__th.admin-home__id Id
+                            th.admin-tbl__th Name
+                            th.admin-tbl__th Author
+                        tbody.admin-tbl__tbody
+                          each item in [1, 2, 3, 4, 5]
+                            tr.admin-tbl__tr
+                              td.admin-tbl__td.admin-tbl__id.admin-home__id 1
+                              td.admin-tbl__td.admin-tbl__name User Name Lorem
+                              td.admin-tbl__td.admin-tbl__author Author 1
+    script(src="js/main.js")

@@ -1,0 +1,25 @@
+.admin-home {
+  &__body {
+    padding: 25px;
+  }
+  &__counts {
+    margin-bottom: 30px;
+  }
+  &__wrap {
+    margin-bottom: 30px;
+  }
+  &__heading {
+    font-size: 16px;
+    color: $gray-dark;
+    font-weight: 500;
+  }
+  &__form {
+    padding: 0;
+  }
+  &__id {
+    text-align: center;
+    @include respond-to('tablet-and-down') {
+      text-align: left;
+    }
+  }
+}
