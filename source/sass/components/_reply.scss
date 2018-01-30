@@ -1,0 +1,19 @@
+.reply {
+  &__heading {
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 600;
+    color: $gray-darker;
+    margin-bottom: 10px;
+    &--right {
+      text-align: right;
+    }
+  }
+  &__text {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-dark;
+    margin-bottom: 18px;
+  }
+}

@@ -11,16 +11,23 @@ html
       +admin-sidebar
       .admin-body.js-admin-body
         +admin-breadcrumb('Admin', 'Users', 'All user')
-        +admin-title('New Page new')
+        +admin-title('Support Page Staff reply')
         form.admin-form
           .admin-form__block
             .admin-form__body
               .admin-form__group
                 input.admin-form__input(type="text", placeholder="Name...")
-              .admin-form__group
+              .admin-form__group.admin-form__group--mb0
                 textarea.admin-form__textarea(rows="4", placeholder="Description...")
-            .admin-form__imgwrap
-              img.admin-form__img(src="images/default.png", alt="")
+          .admin-form__block
+            .reply
+              h5.reply__heading User 1 said:
+              p.reply__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eleifend dolor. Nullam malesuada congue eros, id mollis lacus suscipit ac. Fusce suscipit massa ac ligula elementum eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer venenatis purus purus.
+            .reply
+              h5.reply__heading.reply__heading--right Staff 1 said:
+              p.reply__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eleifend dolor. Nullam malesuada congue eros, id mollis lacus suscipit ac. Fusce suscipit massa ac ligula elementum eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer venenatis purus purus.
+            .admin-form__group.admin-form__group--mb0
+              textarea.admin-form__textarea(rows="4", placeholder="Reply...")
           .admin-form__block
             .admin-form__group.admin-form__group--mb0
               select.admin-form__select.admin-form__select--first
