@@ -60,6 +60,9 @@
       },{
         "title": "Admin user page new",
         "url": "user-page-new"
+      },{
+        "title": "Admin support page staff reply",
+        "url": "support-page-staff-reply"
       }
     ]
   }
