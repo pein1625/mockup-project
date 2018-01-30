@@ -1,0 +1,19 @@
+mixin admin-signup
+  .user
+    .user__wrap
+      a.user__logo(href="")
+        img.user__image(src="../../images/logo-admin.png", alt="")
+      .user__main
+        p.user__text Sign up to your Adcourant Account
+        .user__form
+          input.user__form-item.user__input(type="text" placeholder="User name")
+          input.user__form-item.user__input(type="text" placeholder="Email")
+          input.user__form-item.user__input.user__input--password(type="password" placeholder="Password")
+          label.user__form-item.user__label.js-label
+            input.user__checkbox(type="checkbox")
+            | Agree the terms and policy
+          button.user__form-item.user__button.admin-button Signup
+      .user__forgot
+        p.user__text.user__text--account
+          | Already have an Account?
+          a.user__link(href="") Signin

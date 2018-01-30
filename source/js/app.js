@@ -19,6 +19,7 @@ $(document).ready(function(){
   var $sidebarToggle = $('.js-sidebar-toggle');
   var $sidebarDropdown = $('.js-sidebar-dropdown');
   var $sidebarBtn = $('.js-sidebar-btn');
+  var $adminLabel = $('.js-label');
 
   $menuBtn.on('click', function(){
     $(this).toggleClass('active');
@@ -74,5 +75,8 @@ $(document).ready(function(){
   $sidebarBtn.on('click', function(){
     $sidebar.toggleClass('active');
     $adminBody.toggleClass('active');
+  });
+  $adminLabel.on('click', function() {
+    $(this).addClass('user__label--checked');
   });
 });
