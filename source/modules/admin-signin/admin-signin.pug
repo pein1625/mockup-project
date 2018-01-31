@@ -1,19 +1,19 @@
 mixin admin-signin
-  .user
-    .user__wrap
-      a.user__logo(href="")
-        img.user__image(src="../../images/logo-admin.png", alt="")
-      .user__main
-        p.user__text Sign in with your Adcourant Account
-        .user__form
-          input.user__form-item.user__input(type="text" placeholder="Email")
-          input.user__form-item.user__input.user__input--password(type="password" placeholder="Password")
-          label.user__form-item.user__label.js-label
-            input.user__checkbox(type="checkbox")
+  .admin-user
+    .admin-user__wrap
+      a.admin-user__logo(href="")
+        img.admin-user__image(src="../../images/logo-admin.png", alt="")
+      .admin-user__main
+        p.admin-user__text Sign in with your Adcourant Account
+        .admin-user__form
+          input.admin-user__form-item.admin-user__input(type="text" placeholder="Email")
+          input.admin-user__form-item.admin-user__input.admin-user__input--password(type="password" placeholder="Password")
+          label.admin-user__form-item.admin-user__label.js-label
+            input.admin-user__checkbox(type="checkbox")
             | Keep me signed in
-          button.user__form-item.user__button.admin-button Signin
-      .user__forgot
-        a.user__link(href="") Forgot Password?
-        p.user__text.user__text--account
+          button.admin-user__form-item.admin-user__button.admin-button Signin
+      .admin-user__forgot
+        a.admin-user__link(href="") Forgot Password?
+        p.admin-user__text.admin-user__text--account
           | Do not have an Account?
-          a.user__link(href="") Signup
+          a.admin-user__link(href="") Signup

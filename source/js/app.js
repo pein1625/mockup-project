@@ -80,7 +80,7 @@ $(document).ready(function(){
     $adminBody.toggleClass('active');
   });
   $adminLabel.on('click', function() {
-    $(this).addClass('user__label--checked');
+    $(this).addClass('admin-user__label--checked');
   });
   $countTo.countTo();
 });
