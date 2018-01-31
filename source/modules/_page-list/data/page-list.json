@@ -78,6 +78,12 @@
       },{
         "title": "Admin support page list",
         "url": "support-page-list"
+      },{
+        "title": "Admin news page list",
+        "url": "news-page-list"
+      },{
+        "title": "Admin invoice page list",
+        "url": "invoice-page-list"
       }
     ]
   }

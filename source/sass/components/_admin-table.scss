@@ -77,11 +77,23 @@
     &__id::before {
       content: 'Id';
     }
+    &__stt::before {
+      content: 'Stt';
+    }
+    &__date::before {
+      content: 'Date';
+    }
+    &__type::before {
+      content: 'Type';
+    }
     &__name::before {
       content: 'Name';
     }
     &__username::before {
       content: 'Username';
+    }
+    &__title::before {
+      content: 'Title';
     }
     &__category::before {
       content: 'Category';
