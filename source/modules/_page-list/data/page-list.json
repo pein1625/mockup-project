@@ -90,6 +90,9 @@
       },{
         "title": "Admin Home page",
         "url": "admin-home"
+      },{
+        "title": "Admin user page list",
+        "url": "admin-user-list-page"
       }
     ]
   }

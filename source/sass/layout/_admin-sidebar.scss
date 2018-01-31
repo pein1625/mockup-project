@@ -10,8 +10,7 @@
   left: 0;
   top: 0;
   transition: left .3s linear;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   &__heading {
     font-family: $roboto;
     color: $white-darkest;
@@ -32,12 +31,20 @@
   }
 }
 .sidebar-menu {
+  width: calc(100% + 17px);
+  height: calc(100% - 160px);
+  padding-bottom: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  @include respond-to('tablet-and-down') {
+    width: 100%;
+  }
   &__link {
     display: block;
-    padding: 9px 14px;
-    color: $white;
     font-family: $roboto;
+    color: $white;
     font-size: 14px;
+    padding: 9px 14px;
     &:hover {
       color: $white;
     }
@@ -75,9 +82,20 @@
 }
 .sidebar-user {
   display: flex;
-  margin-top: auto;
+  width: 200px;
   border-top: 1px solid $blue-lightest;
   padding: 13px 16px 8px;
+  margin-top: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transition: left .3s linear;
+  @include respond-to('tablet-and-down') {
+    left: -200px;
+    &.active {
+      left: 0;
+    }
+  }
   &__img {
     display: inline-block;
     width: 40px;

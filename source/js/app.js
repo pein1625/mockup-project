@@ -19,6 +19,7 @@ $(document).ready(function(){
   var $sidebarToggle = $('.js-sidebar-toggle');
   var $sidebarDropdown = $('.js-sidebar-dropdown');
   var $sidebarBtn = $('.js-sidebar-btn');
+  var $sidebarUser = $('.js-sidebar-user');
   var $adminLabel = $('.js-label');
   var $countTo = $('.js-count-number');
 
@@ -75,6 +76,7 @@ $(document).ready(function(){
   });
   $sidebarBtn.on('click', function(){
     $sidebar.toggleClass('active');
+    $sidebarUser.toggleClass('active');
     $adminBody.toggleClass('active');
   });
   $adminLabel.on('click', function() {
