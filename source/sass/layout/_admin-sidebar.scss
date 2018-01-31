@@ -76,8 +76,7 @@
 .sidebar-user {
   display: flex;
   margin-top: auto;
-  border: 1px solid $blue-lightest;
-  border-bottom: 0;
+  border-top: 1px solid $blue-lightest;
   padding: 13px 16px 8px;
   &__img {
     display: inline-block;

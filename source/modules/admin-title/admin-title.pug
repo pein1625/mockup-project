@@ -1,6 +1,10 @@
 include ../admin-search/admin-search
 
-mixin admin-title(title)
+mixin admin-title(title, search)
   .admin-title.admin-container
-    h3.admin-title__title= title
-    h6.admin-title__subtitle Lorem ipsum dolor
+    .admin-title__main
+      h3.admin-title__title= title
+      h6.admin-title__subtitle Lorem ipsum dolor
+    if (search)
+      .admin-title__search
+        +admin-search("Search in list..")

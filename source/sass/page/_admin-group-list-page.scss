@@ -1,0 +1,8 @@
+.group-list {
+  &__checkbox {
+    text-align: center;
+    @include respond-to('tablet-and-down') {
+      text-align: left;
+    }
+  }
+}
