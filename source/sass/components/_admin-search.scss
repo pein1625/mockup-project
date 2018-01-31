@@ -4,6 +4,9 @@
   padding: 0;
   margin-left: auto;
   position: relative;
+  @include respond-to('phone-and-down') {
+    width: calc(100% - 55px);
+  }
   &__input {
     flex: 1;
     padding-right: 40px;

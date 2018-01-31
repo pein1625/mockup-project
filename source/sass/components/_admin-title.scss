@@ -1,9 +1,14 @@
 .admin-title {
-  padding-top: 16px;
-  padding-bottom: 9px;
-  background-color: $white;
+  display: flex;
   font-family: $roboto;
   font-weight: 300;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $white;
+  @include respond-to('phone-and-down') {
+    flex-wrap: wrap;
+  }
   &__title {
     font-size: 24px;
     color: $black-lighter;
@@ -12,5 +17,17 @@
   &__subtitle {
     font-size: 12px;
     color: $gray;
+  }
+  &__search {
+    margin-left: auto;
+    @include respond-to('phone-and-down') {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  .admin-search {
+    @include respond-to('phone-and-down') {
+      width: auto;
+    }
   }
 }

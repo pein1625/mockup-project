@@ -1,5 +1,5 @@
-mixin admin-search
+mixin admin-search(placeholder)
   form.admin-form.admin-search
-    input.admin-form__input.admin-search__input(type="text", placeholder="Search project")
+    input.admin-form__input.admin-search__input(type="text", placeholder=placeholder)
     button.admin-search__btn(type="subimt")
       i.fa.fa-search

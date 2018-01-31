@@ -84,8 +84,10 @@
       },{
         "title": "Admin invoice page list",
         "url": "invoice-page-list"
-      }
-      ,{
+      },{
+        "title": "Admin group page list",
+        "url": "admin-group-list-page"
+      },{
         "title": "Admin Home page",
         "url": "admin-home"
       }
