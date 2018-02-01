@@ -34,10 +34,11 @@
   width: calc(100% + 17px);
   height: calc(100% - 160px);
   padding-bottom: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
   @include respond-to('tablet-and-down') {
     width: 100%;
+    overflow-y: auto;
   }
   &__link {
     display: block;
@@ -83,7 +84,7 @@
 .sidebar-user {
   display: flex;
   width: 200px;
-  border-top: 1px solid $blue-lightest;
+  border-top: 1px solid $blue-lightest-border;
   padding: 13px 16px 8px;
   margin-top: auto;
   position: fixed;
