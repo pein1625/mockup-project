@@ -16,8 +16,11 @@ html
         form.admin-form
           .admin-form__block
             .admin-form__group.admin-form__group--mb0
-              input.admin-form__select.admin-form__select--first(type="text", placeholder="Id Support...")
-              input.admin-form__select(type="text", placeholder="Created date..." onfocus="(this.type='date')", onblur="(this.type='text')")
+              input.admin-form__input.admin-form__input--responsive(type="text", placeholder="Id Invoice...")
+              .admin-form__datepicker.input-group
+                input.admin-form__input.js-datepicker(type="text", placeholder="Date...")
+                span.input-group-addon.admin-form__datebtn
+                  i.fa.fa-calendar
               select.admin-form__select
                 option Category
                 option Category 1

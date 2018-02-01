@@ -83,4 +83,7 @@ $(document).ready(function(){
     $(this).addClass('admin-user__label--checked');
   });
   $countTo.countTo();
+  $('.js-datepicker').datetimepicker({
+    format: 'DD/MM/YYYY'
+  });
 });
