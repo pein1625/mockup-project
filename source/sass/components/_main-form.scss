@@ -27,6 +27,20 @@
         transform: translateY(-50%);
       }
     }
+    &--date::after {
+      content: '\f073';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 100%;
+      font-family: 'FontAwesome';
+      font-size: 18px;
+      color: $gray;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
   &__input,
   &__textarea,
