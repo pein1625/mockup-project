@@ -7,8 +7,16 @@ mixin nav(menu)
             img.logo__img(src="images/logo.png", alt="")
           ul.menu.js-menu-dropdown
             each item in menu
-              li.menu__item
-                a.menu__link(href=item.url)= item.name
+              if (item.name === "UNIVERSITY")
+                li.menu__item.menu-dropdown
+                  a.menu__link.menu__link--caret.js-menu-dropdown-toggle(href=item.url)= item.name
+                  .submenu
+                    a.submenu__item(href="#!") Basic Training
+                    a.submenu__item(href="#!") Advanced Training
+                    a.submenu__item(href="#!") Master mind
+              else
+                li.menu__item
+                  a.menu__link(href=item.url)= item.name
           ul.user
             li.user__item
               a.user__btn.js-search-btn(href="#!")

@@ -22,6 +22,7 @@ $(document).ready(function(){
   var $sidebarUser = $('.js-sidebar-user');
   var $adminLabel = $('.js-label');
   var $countTo = $('.js-count-number');
+  var $menuDropdownToggle = $('.js-menu-dropdown-toggle');
 
   $menuBtn.on('click', function(){
     $(this).toggleClass('active');
@@ -86,4 +87,22 @@ $(document).ready(function(){
   $('.js-datepicker').datetimepicker({
     format: 'DD/MM/YYYY'
   });
+  if ($window.outerWidth() < 992) {
+    let touchTime = 0;
+    $menuDropdownToggle.on('click', function() {
+      if (touchTime === 0) {
+        touchTime = new Date().getTime();
+      }
+      else {
+        if (((new Date().getTime()) - touchTime) < 800) {
+          window.location = this.href;
+          touchTime = 0;
+        }
+        else {
+          touchTime = new Date().getTime();
+        }
+      }
+      return false;
+    });
+  };
 });
