@@ -35,6 +35,10 @@
     "support_page": {
       "title": "SUPPORT PAGE",
       "subtitle": "And we will get back to"
+    },
+    "detail": {
+      "title": "DETAIL PAGE",
+      "subtitle": "And we will get back to"
     }
   }
 }

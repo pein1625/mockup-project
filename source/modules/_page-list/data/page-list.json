@@ -37,6 +37,9 @@
         "title": "profile page",
         "url": "profile"
       },{
+        "title": "detail",
+        "url": "detail"
+      },{
         "title": "support detail",
         "url": "support"
       },{

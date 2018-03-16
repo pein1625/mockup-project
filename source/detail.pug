@@ -1,0 +1,24 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/card/card
+include modules/pagination/pagination
+
+doctype html
+html
+  +head(head.home)
+  body
+    +header(data.detail)
+    main.detail-page
+      .container
+        .detail-info
+          .row
+            .col-md-4
+              .detail-info__imgwrap
+                img.detail-info__img(src="images/img1.jpg", alt="")
+            .col-md-8
+              h1.heading.detail-info__title Lorem ipsum
+              p.detail-info__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
+              p.detail-info__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend magna nec volutpat faucibus. Cras cursus mauris vitae eros volutpat
+    +footer(data)
+    script(src="js/main.js")
