@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Description</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__wrapper js-navigation-wrap">
+          <div class="container">
+            <div class="navigation__inner">
+              <a class="logo" href="/">
+                <img class="logo__img" src="images/logo.png" alt="" />
+              </a>
+              <ul class="menu js-menu-dropdown">
+                <li class="menu__item">
+                  <a class="menu__link" href="home.html">HOME</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="key.html">KEY OFFERING</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="new.html">NEW</a>
+                </li>
+                <li class="menu__item menu-dropdown">
+                  <a class="menu__link menu__link--caret js-menu-dropdown-toggle" href="university.html">UNIVERSITY</a>
+                  <div class="submenu">
+                    <a class="submenu__item" href="#!">Basic Training</a>
+                    <a class="submenu__item" href="#!">Advanced Training</a>
+                    <a class="submenu__item" href="#!">Master mind</a>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <ul class="user">
+                <li class="user__item">
+                  <a class="user__btn js-search-btn" href="#!">
+                    <img class="user__icon" src="images/icon-search.png" alt="" />
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__btn js-register-btn" href="#!">
+                    <img class="user__icon" src="images/icon-user.png" alt="" />
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__btn" href="#!">
+                    <img class="user__icon" src="images/icon-unlock.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="menu-btn js-menu-btn">
+                <div class="menu-btn__wrap">
+                  <span class="menu-btn__bar"></span>
+                  <span class="menu-btn__bar"></span>
+                  <span class="menu-btn__bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="popup js-popup-search">
+        <div class="popup__inner">
+          <div class="popup__close js-popup-search-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <div class="popup__logo">
+            <img class="popup__logoimg" src="images/logo.png" alt="logo" />
+          </div>
+          <h1 class="heading popup__heading">SEARCH</h1>
+          <form class="main-form">
+            <div class="main-form__group">
+              <input class="main-form__input popup__input" type="text" placeholder="Enter your keyword..." />
+            </div>
+            <div class="main-form__group">
+              <button class="button main-form__btn" type="submit">
+                <i class="fa fa-search button__icon"></i>SEARCH</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup js-popup-register popup-register">
+        <div class="popup__inner">
+          <div class="popup__close js-popup-register-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <div class="popup__logo">
+            <img class="popup__logoimg" src="images/logo.png" alt="logo" />
+          </div>
+          <h1 class="heading popup__heading">REGISTER</h1>
+          <form class="main-form">
+            <div class="main-form__group">
+              <input class="main-form__input popup__input" type="email" placeholder="Enter your email..." />
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="main-form__group">
+                  <input class="main-form__input popup__input" type="password" placeholder="Enter new password..." />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="main-form__group">
+                  <input class="main-form__input popup__input" type="password" placeholder="Enter new password again..." />
+                </div>
+              </div>
+            </div>
+            <div class="main-form__group">
+              <input class="main-form__checkbox" type="checkbox" />
+              <label class="main-form__checklabel popup__checklabel">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="main-form__group">
+              <button class="button main-form__btn" type="submit">
+                <i class="fa fa-paper-plane button__icon"></i>REGISTER</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="header__inner">
+        <div class="container">
+          <h1 class="header__title">SUPPORT PAGE</h1>
+          <h5 class="header__subtitle">And we will get back to</h5>
+        </div>
+      </div>
+    </header>
+    <main class="support-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <section class="support-filter">
+              <h1 class="heading">FILTER FORM</h1>
+              <form class="main-form">
+                <div class="main-form__group main-form__group--search">
+                  <input class="main-form__input main-form__search" type="text" placeholder="Search filter...">
+                </div>
+                <div class="main-form__group main-form__group--select">
+                  <select class="main-form__select">
+                    <option>Item type...</option>
+                    <option>Item 2</option>
+                    <option>Item 3</option>
+                    <option>Item 4</option>
+                  </select>
+                </div>
+                <div class="main-form__group main-form__group--select">
+                  <select class="main-form__select">
+                    <option>Current status...</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+                <div class="main-form__group main-form__group--date">
+                  <input class="main-form__input js-datepicker" type="text">
+                </div>
+                <div class="main-form__group">
+                  <button class="button button--blue main-form__btn support-filter__btn" type="submit">
+                    <i class="fa fa-search button__icon"></i>SAVE FILTER</button>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="col-lg-8">
+            <section class="support-table">
+              <h1 class="heading">TABLE LIST</h1>
+              <table class="tbl">
+                <thead class="tbl__head">
+                  <tr class="tbl__trhead">
+                    <th class="tbl__th"></th>
+                    <th class="tbl__th">Id</th>
+                    <th class="tbl__th">Name</th>
+                    <th class="tbl__th">Service Type</th>
+                    <th class="tbl__th">Status</th>
+                    <th class="tbl__th">Created</th>
+                    <th class="tbl__th">Manager</th>
+                  </tr>
+                </thead>
+                <tbody class="tbl__body">
+                  <tr class="tbl__tr">
+                    <td class="tbl__td tbl__td--first">
+                      <input class="tbl__checkbox" type="checkbox">
+                    </td>
+                    <td class="tbl__td">5</td>
+                    <td class="tbl__td">This is name task</td>
+                    <td class="tbl__td">Paypal support Case</td>
+                    <td class="tbl__td">Pending</td>
+                    <td class="tbl__td">01/01/2018</td>
+                    <td class="tbl__td">Manager 1</td>
+                  </tr>
+                  <tr class="tbl__tr">
+                    <td class="tbl__td tbl__td--first">
+                      <input class="tbl__checkbox" type="checkbox">
+                    </td>
+                    <td class="tbl__td">5</td>
+                    <td class="tbl__td">This is name task</td>
+                    <td class="tbl__td">Paypal support Case</td>
+                    <td class="tbl__td">Pending</td>
+                    <td class="tbl__td">01/01/2018</td>
+                    <td class="tbl__td">Manager 1</td>
+                  </tr>
+                  <tr class="tbl__tr">
+                    <td class="tbl__td tbl__td--first">
+                      <input class="tbl__checkbox" type="checkbox">
+                    </td>
+                    <td class="tbl__td">5</td>
+                    <td class="tbl__td">This is name task</td>
+                    <td class="tbl__td">Paypal support Case</td>
+                    <td class="tbl__td">Pending</td>
+                    <td class="tbl__td">01/01/2018</td>
+                    <td class="tbl__td">Manager 1</td>
+                  </tr>
+                  <tr class="tbl__tr">
+                    <td class="tbl__td tbl__td--first">
+                      <input class="tbl__checkbox" type="checkbox">
+                    </td>
+                    <td class="tbl__td">5</td>
+                    <td class="tbl__td">This is name task</td>
+                    <td class="tbl__td">Paypal support Case</td>
+                    <td class="tbl__td">Pending</td>
+                    <td class="tbl__td">01/01/2018</td>
+                    <td class="tbl__td">Manager 1</td>
+                  </tr>
+                  <tr class="tbl__tr">
+                    <td class="tbl__td tbl__td--first">
+                      <input class="tbl__checkbox" type="checkbox">
+                    </td>
+                    <td class="tbl__td">5</td>
+                    <td class="tbl__td">This is name task</td>
+                    <td class="tbl__td">Paypal support Case</td>
+                    <td class="tbl__td">Pending</td>
+                    <td class="tbl__td">01/01/2018</td>
+                    <td class="tbl__td">Manager 1</td>
+                  </tr>
+                </tbody>
+                <tfoot class="tbl__foot">
+                  <tr>
+                    <td class="tbl__footcol"></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="row">
+            <div class="col-lg-6">
+              <article class="footer__widget">
+                <div class="footer__logo">
+                  <img class="footer__logoimg" src="images/logo.png" alt="logo" />
+                </div>
+                <p class="footer__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, quis, ad! Omnis explicabo vitae maxime.</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="#!">
+                      <i class="fa fa-facebook social__icon"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#!">
+                      <i class="fa fa-twitter social__icon"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#!">
+                      <i class="fa fa-play social__icon"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#!">
+                      <i class="fa fa-google-plus social__icon"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#!">
+                      <i class="fa fa-vimeo social__icon"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <article class="footer__widget">
+                <h6 class="footer__heading">FOOTER MENU</h6>
+                <ul class="sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit item 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit amet item 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum item 3</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit 4</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit item 5</a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <article class="footer__widget">
+                <h6 class="footer__heading">FOOTER MENU</h6>
+                <ul class="sublist">
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit item 1</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit amet item 2</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum item 3</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit 4</a>
+                  </li>
+                  <li class="sublist__item">
+                    <a class="sublist__link" href="#!">Lorem ipsum dolor sit item 5</a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">@ COPYRIGHT WEBSITE 2018</div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

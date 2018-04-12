@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Description</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="admin-layout">
+      <div class="sidebar js-sidebar">
+        <div class="sidebar-logo">
+          <img class="sidebar-logo__img" src="images/logo-admin.png" alt="Logo" />
+        </div>
+        <h6 class="sidebar__heading">Dashboard</h6>
+        <ul class="sidebar-menu">
+          <li>
+            <a class="sidebar-menu__link" href="#!">
+              <i class="sidebar-menu__icon fa fa-globe"></i>Managa All</a>
+          </li>
+          <li class="js-sidebar-toggle">
+            <a class="sidebar-menu__link sidebar-menu__link--caret" href="#!">
+              <i class="sidebar-menu__icon fa fa-plus-circle"></i>Add New</a>
+            <ul class="sidebar-submenu js-sidebar-dropdown">
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+            </ul>
+          </li>
+          <li class="js-sidebar-toggle">
+            <a class="sidebar-menu__link sidebar-menu__link--caret" href="#!">
+              <i class="sidebar-menu__icon fa fa-pencil-square-o"></i>Add Invoices</a>
+            <ul class="sidebar-submenu js-sidebar-dropdown">
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+              <li>
+                <a class="sidebar-submenu__link" href="#!">Add new title</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="sidebar-menu__link" href="#!">
+              <i class="sidebar-menu__icon fa fa-youtube-play"></i>Add Video</a>
+          </li>
+          <li>
+            <a class="sidebar-menu__link" href="#!">
+              <i class="sidebar-menu__icon fa fa-newspaper-o"></i>Add News</a>
+          </li>
+          <li>
+            <a class="sidebar-menu__link" href="#!">
+              <i class="sidebar-menu__icon fa fa-life-ring"></i>Add Support</a>
+          </li>
+        </ul>
+        <div class="sidebar-user js-sidebar-user">
+          <img class="sidebar-user__img" src="../images/avatar-admin.png" alt="Avatar" />
+          <div class="sidebar-user__body">
+            <h6 class="sidebar-user__name">Jean Reyes</h6>
+            <p class="sidebar-user__state online">online</p>
+          </div>
+        </div>
+      </div>
+      <div class="admin-body js-admin-body">
+        <div class="breadcrumb-wrap">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="#!">Admin</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="#!">Users</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--last">
+              <span class="breadcrumb__text">All user</span>
+            </li>
+          </ul>
+          <div class="breadcrumb__widget">
+            <form class="admin-form admin-search">
+              <input class="admin-form__input admin-search__input" type="text" placeholder="Search project" />
+              <button class="admin-search__btn" type="subimt">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+            <span class="sidebar-btn js-sidebar-btn">
+              <i class="fa fa-bars"></i>
+            </span>
+          </div>
+        </div>
+        <div class="admin-title admin-container">
+          <div class="admin-title__main">
+            <h3 class="admin-title__title">Support Page edit</h3>
+            <h6 class="admin-title__subtitle">Lorem ipsum dolor</h6>
+          </div>
+        </div>
+        <form class="admin-form">
+          <div class="admin-form__block">
+            <div class="admin-form__body">
+              <div class="admin-form__group">
+                <input class="admin-form__input" type="text" placeholder="Name...">
+              </div>
+              <div class="admin-form__group">
+                <textarea class="admin-form__textarea" rows="4" placeholder="Description..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="admin-form__block">
+            <div class="admin-form__group admin-form__group--mb0">
+              <select class="admin-form__select admin-form__select--first">
+                <option>Author</option>
+                <option>Author 1</option>
+                <option>Author 2</option>
+                <option>Author 3</option>
+              </select>
+              <select class="admin-form__select">
+                <option>Category</option>
+                <option>Category 1</option>
+                <option>Category 2</option>
+                <option>Category 3</option>
+              </select>
+              <select class="admin-form__select">
+                <option>Assign to</option>
+                <option>Assign to 1</option>
+                <option>Assign to 2</option>
+                <option>Assign to 3</option>
+              </select>
+              <div class="admin-form__btnwrap">
+                <a class="button admin-form__btn admin-form__btn--first" href="#!">
+                  <i class="fa fa-undo button__icon"></i>Back to list</a>
+                <button class="button admin-form__btn admin-form__btn--blue" type="submit">
+                  <i class="fa fa-search button__icon"></i>Save</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

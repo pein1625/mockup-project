@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Description</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Description" />
+    <meta name="keywords" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header--bg">
+      <nav class="navigation">
+        <div class="navigation__wrapper js-navigation-wrap">
+          <div class="container">
+            <div class="navigation__inner">
+              <a class="logo" href="/">
+                <img class="logo__img" src="images/logo.png" alt="" />
+              </a>
+              <ul class="menu js-menu-dropdown">
+                <li class="menu__item">
+                  <a class="menu__link" href="home.html">HOME</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="key.html">KEY OFFERING</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="new.html">NEW</a>
+                </li>
+                <li class="menu__item menu-dropdown">
+                  <a class="menu__link menu__link--caret js-menu-dropdown-toggle" href="university.html">UNIVERSITY</a>
+                  <div class="submenu">
+                    <a class="submenu__item" href="#!">Basic Training</a>
+                    <a class="submenu__item" href="#!">Advanced Training</a>
+                    <a class="submenu__item" href="#!">Master mind</a>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <ul class="user">
+                <li class="user__item">
+                  <a class="user__btn js-search-btn" href="#!">
+                    <img class="user__icon" src="images/icon-search.png" alt="" />
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__btn js-register-btn" href="#!">
+                    <img class="user__icon" src="images/icon-user.png" alt="" />
+                  </a>
+                </li>
+                <li class="user__item">
+                  <a class="user__btn" href="#!">
+                    <img class="user__icon" src="images/icon-unlock.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="menu-btn js-menu-btn">
+                <div class="menu-btn__wrap">
+                  <span class="menu-btn__bar"></span>
+                  <span class="menu-btn__bar"></span>
+                  <span class="menu-btn__bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="popup js-popup-search">
+        <div class="popup__inner">
+          <div class="popup__close js-popup-search-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <div class="popup__logo">
+            <img class="popup__logoimg" src="images/logo.png" alt="logo" />
+          </div>
+          <h1 class="heading popup__heading">SEARCH</h1>
+          <form class="main-form">
+            <div class="main-form__group">
+              <input class="main-form__input popup__input" type="text" placeholder="Enter your keyword..." />
+            </div>
+            <div class="main-form__group">
+              <button class="button main-form__btn" type="submit">
+                <i class="fa fa-search button__icon"></i>SEARCH</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup js-popup-register popup-register">
+        <div class="popup__inner">
+          <div class="popup__close js-popup-register-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <div class="popup__logo">
+            <img class="popup__logoimg" src="images/logo.png" alt="logo" />
+          </div>
+          <h1 class="heading popup__heading">REGISTER</h1>
+          <form class="main-form">
+            <div class="main-form__group">
+              <input class="main-form__input popup__input" type="email" placeholder="Enter your email..." />
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="main-form__group">
+                  <input class="main-form__input popup__input" type="password" placeholder="Enter new password..." />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="main-form__group">
+                  <input class="main-form__input popup__input" type="password" placeholder="Enter new password again..." />
+                </div>
+              </div>
+            </div>
+            <div class="main-form__group">
+              <input class="main-form__checkbox" type="checkbox" />
+              <label class="main-form__checklabel popup__checklabel">Lorem ipsum dolor sit amet</label>
+            </div>
+            <div class="main-form__group">
+              <button class="button main-form__btn" type="submit">
+                <i class="fa fa-paper-plane button__icon"></i>REGISTER</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <dialog class="popup-video js-popup-video">
+        <div class="popup-video__wrap">
+          <iframe class="popup-video__video js-popup-video-src" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+          <button class="popup-video__close js-popup-video-close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </dialog>
+      <div class="home-banner">
+        <div class="container">
+          <div class="home-slider owl-carousel js-home-slider">
+            <div class="home-slider__item">
+              <div class="row">
+                <div class="col-md-6">
+                  <section class="home-intro">
+                    <h1 class="home-intro__title">LOREM IPSUM</h1>
+                    <h6 class="home-intro__subtitle">Consectetur adipiscing elit</h6>
+                    <p class="home-intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim vietnam.</p>
+                    <a class="button button--transparent home-intro__btn" href="#!">
+                      <i class="fa fa-paper-plane button__icon"></i>BUTTON</a>
+                  </section>
+                </div>
+                <div class="col-md-6">
+                  <div class="home-video">
+                    <div class="home-video__inner">
+                      <a class="home-video__link js-video-link" href="#!" data-url="https://www.youtube.com/embed/2qEOLdii3B4?rel=0">
+                        <img class="home-video__img" src="images/video.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-slider__item">
+              <div class="row">
+                <div class="col-md-6">
+                  <section class="home-intro">
+                    <h1 class="home-intro__title">LOREM IPSUM</h1>
+                    <h6 class="home-intro__subtitle">Consectetur adipiscing elit</h6>
+                    <p class="home-intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim vietnam.</p>
+                    <a class="button button--transparent home-intro__btn" href="#!">
+                      <i class="fa fa-paper-plane button__icon"></i>BUTTON</a>
+                  </section>
+                </div>
+                <div class="col-md-6">
+                  <div class="home-video">
+                    <div class="home-video__inner">
+                      <a class="home-video__link js-video-link" href="#!" data-url="https://www.youtube.com/embed/2qEOLdii3B4?rel=0">
+                        <img class="home-video__img" src="images/video.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-slider__item">
+              <div class="row">
+                <div class="col-md-6">
+                  <section class="home-intro">
+                    <h1 class="home-intro__title">LOREM IPSUM</h1>
+                    <h6 class="home-intro__subtitle">Consectetur adipiscing elit</h6>
+                    <p class="home-intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim vietnam.</p>
+                    <a class="button button--transparent home-intro__btn" href="#!">
+                      <i class="fa fa-paper-plane button__icon"></i>BUTTON</a>
+                  </section>
+                </div>
+                <div class="col-md-6">
+                  <div class="home-video">
+                    <div class="home-video__inner">
+                      <a class="home-video__link js-video-link" href="#!" data-url="https://www.youtube.com/embed/2qEOLdii3B4?rel=0">
+                        <img class="home-video__img" src="images/video.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="js/main.js"></script>
+  </body>
+</html>
