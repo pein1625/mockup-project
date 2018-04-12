@@ -1,29 +1,30 @@
-# README #
+# GreenShop
+Green Shop Project
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Preview
+Home page: [https://pein1625.github.io/mockup-project/dest/home.html]
 
-### What is this repository for? ###
+Page list: [https://pein1625.github.io/mockup-project/dest/links.html]
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Install
+### Setup Develop Environment
+Step1:
+```
+npm install
+```
 
-### How do I get set up? ###
+Step 2:
+```
+gulp dev
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Setup build
+Step 1:
+```
+npm install
+```
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Step 2:
+```
+gulp build
+```
